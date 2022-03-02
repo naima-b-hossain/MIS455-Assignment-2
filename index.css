@@ -1,0 +1,73 @@
+/* image slider css */
+.fontSize50{
+    font-size: 50px;
+}
+
+
+/* 6 card css */
+.card-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    margin: 100px 0;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: transform linear 1s;
+}
+
+
+/* footer css */
+.footer{
+	background: black;
+	text-align: center;
+	padding: 30px 0px;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */ 
+@media(min-width: 320px) and (max-width: 575px) { 
+    .card-container{
+        grid-template-columns: auto;
+    }
+    .footer-social{
+        display: none;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media(min-width: 576px) and (max-width: 767px) { 
+    .card-container{
+        grid-template-columns: auto auto;
+    }
+    .footer-social{
+        display: none;
+    }
+}
+
+
+
+/* Medium devices (tablets, 768px and up) */ 
+@media(min-width: 768px) and (max-width: 991px) { 
+    .card-container{
+        grid-template-columns: auto auto;
+    }
+    .fontSize50{
+        font-size: 30px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media(min-width: 992px) and (max-width: 1199px) { 
+    
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media(min-width: 1200px){ 
+    
+}
